@@ -8,4 +8,4 @@ Virtual Wardrobe:
 To add dress in Wardrobe:
 
 
-![Uploading Screenshot 2024-07-15 193932.png…]()
+![Screenshot 2024-07-15 193932](https://github.com/user-attachments/assets/28238d13-bd35-4556-967f-b325e8f9e9b2)
