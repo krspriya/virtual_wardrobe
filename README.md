@@ -12,7 +12,7 @@ To add dress in Wardrobe:
 
 
 
-Output Suggestions:
+Output:
 
 
 ![Screenshot 2024-07-29 183231](https://github.com/user-attachments/assets/cd3f4e99-4cb3-485e-8e77-ccb546d2582c)
