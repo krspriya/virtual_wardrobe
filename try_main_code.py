@@ -84,26 +84,8 @@ def delete_item(index):
         df = df.drop(index).reset_index(drop=True)
         df.to_csv(METADATA_FILE, index=False)
 
-# Function to process the image and change the background to white
-def change_background_to_white(image_path):
-    api_key = 'YOUR_API_KEY'  # Replace with your remove.bg API key
-    response = requests.post(
-        'https://api.remove.bg/v1.0/removebg',
-        files={'image_file': open(image_path, 'rb')},
-        data={'size': 'auto'},
-        headers={'X-Api-Key': api_key},
-    )
-    if response.status_code == requests.codes.ok:
-        image = Image.open(BytesIO(response.content)).convert("RGBA")
-        background = Image.new("RGBA", image.size, "WHITE")
-        background.paste(image, (0, 0), image)
-        return background.convert("RGB")
-    else:
-        st.error('Error:', response.text)
-        return None
-
 # Google Generative AI setup
-api_key = 'AIzaSyCHOuju9EWjxTTGiik-oDjZbaA52itvsZY'  # Replace this with your valid API key
+api_key = '####################################'  # Replace this with your valid API key
 genai.configure(api_key=api_key)
 
 generation_config = {
